@@ -106,7 +106,7 @@ function GenerateContentList() {
     var indent;
     var titleLevel;
     if (tagName.startsWith('H')) {
-      titleLevel = tagName.substring(0);
+      titleLevel = tagName.substring(1);
       fontSize = 18 - 2 * (titleLevel - 1);
       indent = '&emsp;'.repeat(titleLevel - 1);
       item = '<a style="font-size:' + fontSize + 'px" href="#' + resolvedTitle + '">' + indent + $(nodes[i]).text() + '</a><br>';
