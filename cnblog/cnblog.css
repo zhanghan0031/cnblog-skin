@@ -141,7 +141,6 @@ div#navCategory blockquote {
   padding: 20px;
   margin-bottom: 25px;
   background-color: whitesmoke;
-  border-left: 6px solid #B4B4B4;
   font-size: 16px;
   font-weight: normal;
   line-height: 30px;
@@ -238,8 +237,7 @@ h3.catListTitle {
 }
 
 #calendar {
-  margin-top: 16px;
-  text-align: center;
+  display: none;
 }
 
 #footer {
@@ -306,6 +304,12 @@ h3.catListTitle {
   font-size: 16px;
   color: #78943A;
   text-shadow: 0 -1px 5px rgba(0, 0, 0, 0.4);
+}
+
+#cnblogs_post_body img {
+  max-height: 85%;
+  cursor: pointer;
+  transition: all 0.5s;
 }
 
 /**
