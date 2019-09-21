@@ -158,6 +158,25 @@ function customTimer(inpId, fn) {
   }
 }
 
+// 添加copy注脚
+function bindCopyFooter() {
+    jQuery(document).on('copy', function(e)
+    {
+        var selected = window.getSelection();
+        var copyFooter = '<br>---------------------<br>著作权归作者所有。<br>'
+            + '商业转载请联系作者获得授权，非商业转载请注明出处。<br>'
+            + '作者：LarvaZhang<br> 源地址：' + document.location.href
+            + '<br>来源：博客园cnblogs<br>© 版权声明：本文为博主原创文章，转载请附上博文链接！';
+        var copyHolder = $('<div>', {html: selected + copyFooter, style: {position: 'absolute', left: '-99999px'}});
+
+        $('body').append(copyHolder);
+        selected.selectAllChildren( copyHolder[0] );
+        window.setTimeout(function() {
+            copyHolder.remove();
+        },0);
+    });
+}
+
 // execute the func after the page have loaded
 $(function () {
   customTimer('#div_digg', function () {
@@ -173,6 +192,7 @@ $(function () {
   });
 
   GenerateContentList();
+  bindCopyFooter();
 
   customTimer('.catListTag', generateTagClouds);
 
