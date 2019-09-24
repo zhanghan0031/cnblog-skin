@@ -207,6 +207,10 @@ div#navCategory blockquote {
   padding-bottom: 10px;
 }
 
+.postSeparator {
+  border-bottom: 1px solid #CCCCCC;
+}
+
 /**************************************************************************
   sidebar style
 **************************************************************************/
