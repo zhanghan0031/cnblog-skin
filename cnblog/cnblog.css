@@ -68,10 +68,15 @@ blockquote {
 #cnblogs_post_body th, .cnblogs-post-body th {
   font-weight: bold;
   font-size: 16px;
+  max-width: 250px;
 }
 
 #cnblogs_post_body tr:nth-child(2n), .cnblogs-post-body tr:nth-child(2n) {
   background-color: #F6F4F0 !important;
+}
+
+#cnblogs_post_body td, .cnblogs-post-body td {
+  max-width: 250px;
 }
 
 /**************************************************************************
