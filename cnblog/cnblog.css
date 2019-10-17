@@ -81,9 +81,9 @@ blockquote {
  * blogTitle
  */
 #home {
-  margin: 0px auto;
+  margin: 0 130px 0 100px;
   text-align: left;
-  max-width: 1200px;
+  max-width: 90%;
 }
 
 #blogTitle {
@@ -333,13 +333,25 @@ h3.catListTitle {
 #div_digg {
   position: fixed;
   bottom: 10px;
-  right: 15px;
+  right: 5px;
   border: 2px solid #ECD7B1;
   padding: 10px;
-  width: 140px;
+  width: 100px;
   background-color: #FFFFFF;
   border-radius: 5px 5px 5px 5px !important;
   box-shadow: 0 0 0 1px #5F5A4B, 1px 1px 6px 1px rgba(10, 10, 0, 0.5);
+}
+
+.buryit {
+  float: right;
+  margin-left: 5px;
+  width: 46px;
+  height: 52px;
+  background: url('//static.cnblogs.com/images/downdown.gif') no-repeat;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 2px;
+  padding-top: 5px;
 }
 
 /**
